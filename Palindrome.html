@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Reverse</title>
+</head>
+<body bgcolor="lightpink"><br><br>
+<script>
+var n,temp,r,rev=0,s=0;
+n=parseInt(prompt('Enter the number'));
+temp=n;
+while(n>0)
+ {
+   r=n%10;
+   s=s+r;
+   rev=rev*10+r;
+   n=parseInt(n/10);
+ }
+document.write("The Reverse of the given number is "+rev+"<br>");
+document.write("The sum of the number is "+"&nbsp"+s+"<br>");
+if(temp==rev)
+ {
+   document.write("The given number is a Palindrome");
+ }
+else
+ {
+   document.write("The given number is Not a Palindrome");
+ }
+</script>
+</body>
+</html>

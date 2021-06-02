@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Amstrong</title>
+</head>
+<body>
+<script>
+var n,i,r,num=0,temp;
+n=parseInt(prompt('Enter the number'));
+temp=n;
+while(n!=0)
+ {
+  r=parseInt(n%10);
+   num=parseInt(num+r*r*r);
+   n=parseInt(n/10);
+ }
+if(num==temp)
+ {
+   document.write(temp+" is an armstrong number");
+ }
+else
+ {
+   document.write(temp+" is not an armstrong number");
+ }
+</script>
+</body>
+</html>
